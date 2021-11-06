@@ -1,0 +1,12 @@
+.main-footer{
+    color: white;
+    background-color: rgb(54, 54, 238);
+    padding-top: 3em;
+    position: absolute;
+    bottom: -720px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}  
