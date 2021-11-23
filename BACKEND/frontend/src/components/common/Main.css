@@ -1,0 +1,17 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -180px;
+    background-size: cover;
+    height: 105vh;
+    background-image: url("./homeback.jpg");
+}
+
+.main-header{
+    text-align: center;
+    margin-top: 110px;
+    color: blue;
+    text-shadow: 2px 2px #302f24;
+    font-size: 50px;
+}

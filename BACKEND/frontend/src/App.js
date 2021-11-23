@@ -3,7 +3,7 @@ import {BrowserRouter, Route} from 'react-router-dom';
 import CreatePayment from './components/pages/payment/CreatePayment';
 import CreditCard from './components/pages/creditcard/CreditCard';
 import EditDetails from './components/pages/payment/EditDetails';
-import Home from './components/common/Home';
+
 import NavBar from './components/common/NavBar';
 import ConfirmDetails from './components/pages/payment/ConfirmDetails';
 import RefundRequest from './components/pages/refunddetails/RefundRequest';
@@ -20,7 +20,7 @@ import ViewRefundRequest from './components/pages/admin/payment_managment/ViewRe
 import View_Refund_Details from './components/pages/admin/payment_managment/View_Refund_Details';
 import AdminHome from './components/pages/admin/AdminHome';
 import DoctorLogin from './components/pages/admin/DoctorLogin';
-import Footer from './components/common/Footer';
+import Main from './components/common/Main';
 
 
 
@@ -30,7 +30,7 @@ export default class App extends Component {
       <BrowserRouter>
       <div>
           <NavBar/>
-          <Route path="/" exact component={Home}></Route>
+          <Route path="/" exact component={Main}></Route>
           <Route path="/add" component={CreatePayment}></Route>
           <Route path="/edit/:id" component={EditDetails}></Route>
           <Route path="/post/:id" component={ConfirmDetails}></Route>
@@ -51,7 +51,7 @@ export default class App extends Component {
           <Route path="/doctorlogin" component={DoctorLogin}></Route>
           <br/>
           <br/>
-          <Footer/>
+          
       </div>
       </BrowserRouter>
     )
